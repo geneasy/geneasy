@@ -1,8 +1,10 @@
 #!/usr/bin/env node
+import process from 'node:process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Command } from 'commander';
 import fsExtra from 'fs-extra';
+import { render } from './lib/index.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const { readJsonSync } = fsExtra;
@@ -30,9 +32,17 @@ Examples:
   .showHelpAfterError();
 
 program.parse();
-// Program.parse(process.argv);
+// program.parse(process.argv);
 
 const options = program.opts();
-if (options.template) console.log(`- template: ${options.template}`);
-if (options.output) console.log(`- output: ${options.output}`);
-console.log('Remaining arguments:', program.args);
+// if (options.template) console.log(`- template: ${options.template}`);
+// if (options.output) console.log(`- output: ${options.output}`);
+// console.log('Remaining arguments:', program.args);
+(async () => {
+  try {
+    await render(options.template, program.args, options.output);
+  } catch (error) {
+    console.error(error);
+    process.exitCode = 1;
+  }
+})();

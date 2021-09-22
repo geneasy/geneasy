@@ -4,6 +4,8 @@
 [![LICENSE][license-image]][license-url]
 [![code style: prettier][code-style-prettier-image]][code-style-prettier-url]
 
+> generate + easy = geneasy = ge
+
 A command line tool that can easily generate HTML, Markdown documents, etc.
 
 ## Installation
