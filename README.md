@@ -12,6 +12,28 @@ A command line tool that can easily generate HTML, Markdown documents, etc.
 npm i -g geneasy
 ```
 
+## Usage
+
+```sh
+Usage: cli|ge [options] <data-file...>
+
+A command line tool that can easily generate HTML, Markdown documents, etc.
+
+Arguments:
+  data-file              data file used to fill the document
+
+Options:
+  -t, --template <file>  template file used to render the document
+  -o, --output <file>    output file
+  -V, --version          output the version number
+  -h, --help             display help for command
+
+Examples:
+  $ geneasy -t template.hbs -o README.md readme.json
+  $ geneasy -t template.hbs -o index.html data.yaml
+  $ ge -t template.hbs -o /list/index.html data.yaml
+```
+
 ## Plugins
 
 - [geneasy-yaml](https://github.com/geneasy/geneasy-yaml) - A plugin that enables geneasy to use dafa files in YAML format.
