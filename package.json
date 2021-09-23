@@ -1,6 +1,6 @@
 {
   "name": "geneasy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A command line tool that can easily generate HTML, Markdown documents, etc.",
   "type": "module",
   "bin": {
@@ -36,7 +36,7 @@
   "dependencies": {
     "commander": "^8.2.0",
     "fs-extra": "^10.0.0",
-    "geneasy-handlebars": "^0.0.1",
+    "geneasy-handlebars": "^0.0.4",
     "geneasy-yaml": "^0.0.1"
   },
   "devDependencies": {
