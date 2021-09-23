@@ -1,6 +1,6 @@
 {
   "name": "geneasy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A command line tool that can easily generate HTML, Markdown documents, etc.",
   "type": "module",
   "bin": {
