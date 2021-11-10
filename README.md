@@ -41,6 +41,11 @@ Examples:
 - [geneasy-yaml](https://github.com/geneasy/geneasy-yaml) - A plugin that enables geneasy to use dafa files in YAML format.
 - [geneasy-handlebars](https://github.com/geneasy/geneasy-handlebars) - A plugin that enables geneasy to use the Handlebars templates.
 
+## Related
+
+- [geneasy-links](https://github.com/geneasy/links) - 友情链接模板 - 这是一个通用的友情链接模板，任何类型的网站都可以拿去使用。
+- [geneasy-nav](https://github.com/geneasy/nav) - 网址导航模板 - 这是一个通用的网址导航模板，任何类型的网站都可以拿去使用。
+
 ## License
 
 Copyright (c) 2021 [Pipecraft][my-url]. Licensed under the [MIT license][license-url].
